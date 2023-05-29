@@ -1,7 +1,7 @@
 <?php
 $servidor = "5.22.216.32";
 $usuario = "remote_manager";
-$contrasena = "$uFBUp7&*79W7*17";
+$contrasena = "1TrAgr(eaS2";
 $basedatos = "web_app";
 
 $conexion = new mysqli($servidor, $usuario, $contrasena, $basedatos);
