@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    image: ikersolozabal/proyecto_final_pups:v7
+    ports:
+      - 8080:80
+    deploy:
+      mode: replicated
+      replicas: 6
+    restart: unless-stopped
