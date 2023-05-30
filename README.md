@@ -1,4 +1,5 @@
-# Proyecto final - Puesta en producción segura
+
+![Descripción de la imagen](/images/social_preview.png)
 
 ## Old - Web vulnerable (v12)
 
