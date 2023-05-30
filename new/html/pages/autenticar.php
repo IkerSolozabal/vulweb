@@ -6,8 +6,11 @@ require_once '../services/conexion.php';
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
 
-$consulta = "SELECT * FROM usuarios WHERE correo_electronico = '$correo'";
-$resultado = $conexion->query($consulta);
+$consulta = "SELECT * FROM usuarios WHERE correo_electronico = ?";
+$statement = $conexion->prepare($consulta);
+$statement->bind_param("s", $correo);
+$statement->execute();
+$resultado = $statement->get_result();
 
 if ($resultado->num_rows == 1) {
     $fila = $resultado->fetch_assoc();
