@@ -15,8 +15,7 @@ También se ha habilitado ssl para que la web sea segura
 
 Se ha configurado también los virtual host para que responda al dominio `proyectofinalpups.es`, redireccionando automaticamente las peticiones `http` al puerto `443`
 
-La imagen usada para esta versión corregida se consutrye con el Dockerfile que se encuentra en  `new/`
+La imagen usada para esta versión corregida se construye con el Dockerfile que se encuentra en  `new/`
 Esa misma imagen es la que se encuentra en Docker hub con el tag [versión 18](https://hub.docker.com/r/ikersolozabal/proyecto_final_pups)
-
 
 > En ambas imagenes se ha usado docker-compose.yml para correr el servicio en `Docker swarm` con el objetivo de implementar alta disponibilidad 
