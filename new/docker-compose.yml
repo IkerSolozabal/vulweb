@@ -2,9 +2,12 @@ version: '3'
 
 services:
   web:
-    image: ikersolozabal/proyecto_final_pups:v7
+    image: ikersolozabal/proyecto_final_pups:v15
     ports:
-      - 8080:80
+      - 80:80
+      - 443:443
+    env_file:
+      - .env
     deploy:
       mode: replicated
       replicas: 6
